@@ -70,7 +70,7 @@ else:
 st.subheader("📉 Historical NSE Stock Prices")
 
 try:
-    nse_path = "/Users/surisettivamsikrishna/Downloads/Vamsi Pc/CODES/mark1/Q1/nse_data001.csv"
+    nse_path = "/Users/surisettivamsikrishna/Downloads/Vamsi Pc/CODES/mark1/Q2/nse_data001.csv"
     nse = pd.read_csv(nse_path, parse_dates=["Date"])
     nse.set_index("Date", inplace=True)
 
