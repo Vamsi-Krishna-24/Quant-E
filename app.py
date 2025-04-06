@@ -5,7 +5,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # ---------- Load the trained model ----------
-file_path = '/Users/surisettivamsikrishna/Downloads/Vamsi Pc/CODES/mark1/Q2/random_forest_model_002.pkl'
+file_path = 'random_forest_model_002.pkl'
 
 model = None
 if os.path.exists(file_path):
@@ -70,7 +70,7 @@ else:
 st.subheader("📉 Historical NSE Stock Prices")
 
 try:
-    nse_path = "/Users/surisettivamsikrishna/Downloads/Vamsi Pc/CODES/mark1/Q2/nse_data001.csv"
+    nse_path = "nse_data001.csv"
     nse = pd.read_csv(nse_path, parse_dates=["Date"])
     nse.set_index("Date", inplace=True)
 
